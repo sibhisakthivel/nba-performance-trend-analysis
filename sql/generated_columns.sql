@@ -95,13 +95,11 @@ ALTER TABLE boxscores.player_boxscores_traditional_v3
 ADD COLUMN IF NOT EXISTS clean_name TEXT;
 
 UPDATE boxscores.player_boxscores_traditional_v3
-SET clean_name = lower(
-    regexp_replace(
-        unaccent(CONCAT_WS(' ', first_name, family_name)),
-        '[^a-z ]',
-        '',
-        'g'
-    )
+SET clean_name = regexp_replace(
+    lower(unaccent(CONCAT_WS(' ', first_name, family_name))),
+    '[^a-z ]',
+    '',
+    'g'
 );
 
 -- Home / away (materialized)
