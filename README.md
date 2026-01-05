@@ -110,7 +110,7 @@ While streaks alone show limited explanatory power, several natural extensions c
 
 A key takeaway from this project is that intuitively appealing narratives do not always translate into statistically robust signals. Negative results, when obtained through careful methodology and formal inference, are informative and valuable. This study demonstrates how exploratory insights can—and should—be validated through disciplined statistical reasoning.
 
-## Technical Approach (Data Science Focus)
+## Technical and Statistical Approach
 
 This project follows a standard data science workflow, with a deliberate emphasis on exploratory analysis, statistical inference, and uncertainty-aware conclusions rather than predictive modeling. The technical implementation prioritizes correctness, interpretability, and methodological rigor.
 
